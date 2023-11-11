@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // Load static files. Commenting out as this works inconsistently for me
-app.use(express.static(path.join(__dirname, '../client')));
+// app.use(express.static(path.join(__dirname, '../client')));
 
 // ****** LOAD HOME PAGE ********
 // html
@@ -31,19 +31,18 @@ app.get('/script.js', (req, res) => {
 
 
 // ****** LOAD LOGIN PAGE ********
-// html
 app.get('/login', (req, res) => {
   res.status(200).sendFile(path.resolve(__dirname, '../client/login/index.html'))
 })
 // css
-app.get('/styles.css', (req, res) => {
+app.get('/login/styles.css', (req, res) => {
   console.log('Loading css');
-  res.status(200).sendFile(path.resolve(__dirname, '../client/home/styles.css'))
+  res.status(200).sendFile(path.resolve(__dirname, '../client/login/styles.css'))
 });
 // javascript
-app.get('/script.js', (req, res) => {
+app.get('/login/script.js', (req, res) => {
   console.log('Loading js');
-  res.status(200).sendFile(path.resolve(__dirname, '../client/home/script.js'))
+  res.status(200).sendFile(path.resolve(__dirname, '../client/login/script.js'))
 });
 
 
