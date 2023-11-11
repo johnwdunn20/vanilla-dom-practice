@@ -14,11 +14,11 @@
       <h3>Enter a new activity</h3>
       <div>
         <label type="label" for="activity" >Enter your activity</label>
-        <input type="text" name="activity">
+        <input type="text" name="activity" id="activity">
       </div>
       <div>
         <label type="label" for="day" >Day of Week</label>
-        <select name="day">
+        <select name="day" id="day">
           <option value="Monday">Monday</option>
           <option value="Tuesday">Tuesday</option>
           <option value="Wednesday">Wednesday</option>
@@ -27,12 +27,10 @@
         </select>
       </div>
       <div>
-        <p>Select a week</p>
-        <label for="week-1-radio">1</label>
-        <input type="radio" name="week" id="week-1-radio" value="1">
-        <label for="week-2-radio">2</label>
-        <input type="radio" name="week" id="week-2-radio" value="2">
+        <label type="label" for="week-selection" >Enter week #</label>
+        <input type="text" name="week-selection" id="week-selection">
       </div>
+      <button type="submit">Save</button>
     </form>
   </section>
   <section>
@@ -46,36 +44,36 @@
         <th>Friday</th>
       </tr>
       <tr id="week-1">
-        <td>
+        <td class="Monday">
           <ul></ul>
         </td>
-        <td>
+        <td class="Tuesday">
           <ul></ul>
         </td>
-        <td>
+        <td class="Wednesday">
           <ul></ul>
         </td>
-        <td>
+        <td class="Thursday">
           <ul></ul>
         </td>
-        <td>
+        <td class="Friday">
           <ul></ul>
         </td>
       </tr>
       <tr id="week-2">
-        <td>
+        <td class="Monday">
           <ul></ul>
         </td>
-        <td>
+        <td class="Tuesday">
           <ul></ul>
         </td>
-        <td>
+        <td class="Wednesday">
           <ul></ul>
         </td>
-        <td>
+        <td class="Thursday">
           <ul></ul>
         </td>
-        <td>
+        <td class="Friday">
           <ul></ul>
         </td>
     </table>
