@@ -1,4 +1,18 @@
 {
+  "name": "vanilla-dom-practice",
+  "version": "1.0.0",
+  "description": "practice for the assessment ",
+  "main": "./server/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnwdunn20/vanilla-dom-practice.git"
+  },
+  "author": "John Dunn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnwdunn20/vanilla-dom-practice/issues"
+  },
+  "homepage": "https://github.com/johnwdunn20/vanilla-dom-practice#readme",
   "scripts": {
     "server": "nodemon ./server/server.js"
   },
